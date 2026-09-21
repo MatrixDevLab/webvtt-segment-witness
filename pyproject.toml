@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "webvtt-segment-witness"
+version = "0.1.0"
+description = "Offline diagnostics for segmented WebVTT/HLS timing contracts"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+readme = "README.md"
+
+[project.scripts]
+webvtt-segment-witness = "webvtt_segment_witness.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
